@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     get 'tweets', to: 'tweets#index'
     get 'search', to: 'tweets#search'
+    post 'tweet', to: 'tweets#tweet'
   end
 
   #Do not place any routes below this one
